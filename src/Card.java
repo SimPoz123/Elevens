@@ -60,6 +60,7 @@ public class Card {
 	 */
 	public String rank() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return cardRank;
 	}
 
    /**
@@ -68,6 +69,7 @@ public class Card {
 	 */
 	public int pointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return cardPointValue;
 	}
 
 	/** Compare this card with the argument.
@@ -78,6 +80,11 @@ public class Card {
 	 */
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		if (this.suit().equals(otherCard.suit()) && this.rank().equals(otherCard.rank())) {
+			return true;
+		}
+
+		return false;
 	}
 
 	/**
@@ -93,5 +100,8 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		String str;
+		str = this.rank() + " of " + this.suit() + " (point value = " + this.pointValue() + ")";
+		return str;
 	}
 }
