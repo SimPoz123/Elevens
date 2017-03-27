@@ -20,6 +20,12 @@ public class Card {
 	 */
 	private int pointValue;
 
+	private String cardRank;
+
+	private String cardSuit;
+
+	private int cardPointValue;
+
 
    /**
 	 * Creates a new <code>Card</code> instance.
@@ -33,6 +39,9 @@ public class Card {
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		this.cardRank = cardRank;
+		this.cardSuit = cardSuit;
+		this.cardPointValue = cardPointValue;
 	}
 
 
@@ -42,6 +51,7 @@ public class Card {
 	 */
 	public String suit() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		return cardSuit;
    }
 
 	/**
