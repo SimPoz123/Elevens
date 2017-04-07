@@ -51,6 +51,18 @@ public class DeckTester {
 		System.out.println();
 		System.out.println();
 
+		String[] ranks2 = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
+		String[] suits2 = {"Hearts", "Diamonds", "Spades", "Clubs"};
+		int [] pointValues2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+		Deck deck2 = new Deck(ranks2, suits2, pointValues2);
+
+		System.out.println("**** Shufffling a Deck ****");
+		System.out.println("Original Deck: ");
+		System.out.println(deck2.toString());
+		deck2.shuffle();
+		System.out.println("Shuffled Deck: ");
+		System.out.println(deck2.toString());
+
 		/* *** TO BE COMPLETED IN ACTIVITY 4 *** */
 	}
 }
